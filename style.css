@@ -13,6 +13,11 @@ body{
 
 }
 
+.light-gray-description{
+    color: #534C64;
+    font-size: 0.80rem;
+    font-weight: 400;  
+}
 
 
 /* header section start */
@@ -117,8 +122,7 @@ body{
 }
 
 .banner-section{
-    min-height: 500px;
-    
+    min-height: 468px;
 
 
 }
@@ -138,11 +142,11 @@ body{
     padding: 80px 80px;
     background-image: url(./images/Group\ 14.png);
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: left bottom top;
     background-size: 100%;
-     
+    background-position: left;
+    /* border: 2px solid green; */
 }
-
 
 
 .banner-image{
@@ -164,9 +168,7 @@ body{
     font-weight: 600;
     text-transform: uppercase;
 
-
 }
-
 
 
 .banner-title-two{
@@ -197,6 +199,8 @@ body{
     border-radius: 48px;
     background-color: #FF42A5;
     color: #FFF;
+    font-size: 0.80rem;
+    font-weight: 600;
 
 
 }
@@ -234,6 +238,175 @@ body{
 
 /* main part start */
 
+/* We are gamer section start */
+
+
+
+.we-are-gamer-section{
+    min-height: 500px;
+    background-color: rgba(255, 66, 165, 0.03);
+
+
+}
+
+.we-are-gamer-container{
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    margin: 0 auto;
+    max-width: 1440px;
+    justify-content: center;
+}
+
+.we-are-gamer-text{
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 103px;
+    text-align:right;  
+    /* border: 2px solid crimson;  */
+  
+}
+
+.we-are-gamer-image{
+    width: 50%;
+}
+
+
+.we-are-gamer-image img{
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+.we-are-gamer-title{
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+#know-btn{
+ background-color: #FF42A5;
+ margin: 16px auto;
+
+}
+
+.purpose{
+
+}
+
+.purpose{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+
+.title{
+    font-size: 1.2rem;
+    font-weight: 700;
+     
+}
+
+
+
+/* We are gamer section stop */
+
+
+
+
+
+
+
+
+
+
+
+
+/* play instantly section start */
+
+
+
+.play-instantly-section{
+    min-height: 500px;
+    background-color: rgba(255, 66, 165, 0.03);
+    border: 2px solid #a713d4;
+
+
+}
+
+.play-instantly-container{
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    margin: 90px auto;
+    max-width: 1440px;
+    justify-content: center;
+    border: 2px solid #F948B2;
+    
+}
+
+.play-instantly-text{
+    width: 50%;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 123px;
+    border: 2px solid #4b48f9;
+
+     
+}
+
+
+.play-instantly-image{
+    width: 50%;
+    border: 2px solid #e96011;
+
+
+}
+
+
+
+.play-instantly-image img{
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+.play-instantly-title{
+    
+
+
+}
+
+
+
+#know-btn{
+ background-color: #FF42A5;
+
+}
+
+.purpose{
+
+}
+
+
+.title{
+     
+}
+
+
+
+/* play instantly section stop */
+
 
 
 /* main part stop */
@@ -255,7 +428,9 @@ body{
 
 
 
-
+.hide{
+    visibility: hidden;
+}
 
 
 /* #Responsive Media Query */
@@ -264,7 +439,7 @@ body{
 
 @media screen and (max-width: 576px) {
 
-    .nav-container, .nav-items-container, .banner-container{
+    .nav-container, .nav-items-container, .banner-container, .we-are-gamer-container{
         flex-direction: column;
     }
 
@@ -300,6 +475,31 @@ body{
     .banner-title {
         font-size: 1.4rem;
     }
+
+    .banner-image {
+        width: 68%;
+      }
+
+    .we-are-gamer-image {
+        width: 100%;
+      }
+
+
+      .we-are-gamer-text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .we-are-gamer-title {
+        text-align: center;
+      }
+
+
+      .banner-text {
+        background-position: center;
+        background-size: 80%;
+      }
 
 
 
@@ -354,7 +554,7 @@ body{
 
 /*Tablet or Medium Device View */
 @media screen and (max-width: 960px) and (min-width: 576px) {
-    .nav-container{
+    .nav-container, .we-are-gamer-container{
         flex-direction: column;
     }
 
@@ -377,9 +577,26 @@ body{
 
     }
 
+    .we-are-gamer-image {
+    width: 75%;
+    }
+
+    .we-are-gamer-title {
+        text-align: center;
+      }
 
 
+      .we-are-gamer-text {
+        width: 80%;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
 
+      }
+
+      .banner-section {
+        min-height: 262px;
+      }
 
 
       
