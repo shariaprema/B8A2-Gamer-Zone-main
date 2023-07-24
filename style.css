@@ -225,17 +225,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* main part start */
 
 /* We are gamer section start */
@@ -245,16 +234,15 @@ body{
 .we-are-gamer-section{
     min-height: 500px;
     background-color: rgba(255, 66, 165, 0.03);
-
+    min-height: 357px;
+    margin: 0 auto;
+    max-width: 1440px;
 
 }
 
 .we-are-gamer-container{
     display: flex;
     align-items: center;
-    min-height: 500px;
-    margin: 0 auto;
-    max-width: 1440px;
     justify-content: center;
 }
 
@@ -298,9 +286,6 @@ body{
 
 }
 
-.purpose{
-
-}
 
 .purpose{
     font-size: 1em;
@@ -315,17 +300,65 @@ body{
      
 }
 
-
-
 /* We are gamer section stop */
 
 
 
 
 
+/* Online Games Section Start */
+
+.online-games-section{
+    min-height: 400px;
+    text-align: center;
+    margin: 50px auto 0;
+    max-width: 1440px;
+    background: #FFF;
+
+}
+
+.online-games-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 40px auto;
+    
+}
+
+
+.online-games-container .card{
+    border-radius: 8px;
+    text-align: center;
+    margin: 0;
+}
 
 
 
+.card img{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.card-description{
+    text-align: center;
+    margin: 10px 46px;
+}
+
+.online-games-section-title{
+    text-align: center;
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.onlinegame-text{
+    margin-top: 9px;
+}
+
+
+
+/*Online Games Section End */
 
 
 
@@ -333,12 +366,12 @@ body{
 /* play instantly section start */
 
 
-
 .play-instantly-section{
-    min-height: 500px;
-    background-color: rgba(255, 66, 165, 0.03);
-    border: 2px solid #a713d4;
-
+    min-height: 333px;
+    
+    margin: 90px auto;
+    max-width: 1440px;
+    background: #FFF;
 
 }
 
@@ -346,61 +379,45 @@ body{
     display: flex;
     align-items: center;
     min-height: 200px;
-    margin: 90px auto;
-    max-width: 1440px;
     justify-content: center;
-    border: 2px solid #F948B2;
     
 }
 
 .play-instantly-text{
     width: 50%;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 123px;
-    border: 2px solid #4b48f9;
+    text-align: left;
+    padding-left: 181px;
+    padding-right: 193px;
+    
+}
 
-     
+.play{
+    text-align: left;
+
 }
 
 
 .play-instantly-image{
     width: 50%;
-    border: 2px solid #e96011;
-
-
+    position: relative;
 }
 
 
 
 .play-instantly-image img{
-    width: 80%;
+    width: 70%;
     height: 100%;
     display: block;
     margin: auto;
 }
 
 
-.play-instantly-title{
-    
-
-
-}
-
-
-
-#know-btn{
- background-color: #FF42A5;
-
-}
-
-.purpose{
-
-}
-
-
-.title{
-     
+.mini-image{
+    height: 40%;
+    width: 30%;
+    position: absolute;
+    right: 3%;
+    bottom: -12%;
 }
 
 
@@ -409,28 +426,176 @@ body{
 
 
 
+
+/* games button section start */
+
+.games-button-section{
+    min-height: 226px;
+    margin: 20px auto;
+    max-width: 1440px;
+    background: #FFF;
+}
+
+.games-button-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+
+}
+
+
+.strategy-games{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 12px;
+    border-radius: 35px;
+}
+
+.game-text{
+    text-align: center;
+    margin: 10px 6px;
+    color: #0B0223;
+    font-size: 0.80rem;
+    font-weight: 600;
+    padding: 10px 0px;
+  }
+
+  .strategy-games img{
+    width: 35px;
+    height: 35px;
+  }
+
+
+  .strategy-games:hover{
+    border: 1px solid #FF42A5;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        animation-duration: 2s; 
+  }
+
+
+
+/* games button section stop */
+
+
 /* main part stop */
 
 
 
+/* footer section stop */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.hide{
-    visibility: hidden;
+.footer-section{
+    min-height: 400px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #0B0223;
+    text-align: center;
+    padding: 50px 30px 20px;
 }
+
+.footer-section div{
+    margin: 20px;
+}
+
+
+.first-nav, .social-icon, .third-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.first-nav li{
+    list-style: none;
+
+}
+
+
+.first-nav li a{
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 20px;
+  
+}
+
+
+.social-icon a{
+    text-decoration: none;
+    padding: 8px;
+    margin: 10px;
+    background-color: #534C64;
+    border-radius: 50%;  
+}
+
+.social-icon a svg{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+
+}
+
+/* hover effect */
+
+.social-icon a:hover{
+    background-color: #0B0223;
+    transition: 0.5s;
+}
+
+.social-icon a:hover svg{
+    color: white;
+    transition: 0.5s;
+} 
+
+
+
+.third-nav li{
+    list-style: none;
+   
+}
+
+.third-nav li a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+
+.footer-bottom{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+
+.white{
+    color: #FFF;
+}
+
+
+/* footer section stop */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* #Responsive Media Query */
@@ -439,9 +604,11 @@ body{
 
 @media screen and (max-width: 576px) {
 
-    .nav-container, .nav-items-container, .banner-container, .we-are-gamer-container{
+    .nav-container, .nav-items-container, .banner-container, .we-are-gamer-container, .play-instantly-container{
         flex-direction: column;
     }
+
+
 
     .header-section {
         padding: 18px;
@@ -501,53 +668,106 @@ body{
         background-size: 80%;
       }
 
-
-
-
-
-
-
-
-
-
-      /* .feature-img-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .teams-content, .facts-card-container{
-        padding-left: 20px;
-        padding-right: 20px;
-        
+      .online-games-container{
+        grid-template-columns: repeat(1,1fr);
+        /* margin: 40px auto; */
         
     }
 
-    .facts-card-container{
-        gap: 20px;
-    }
+    .card-description {
+        margin: 22px 46px;
+      }
 
-    .feature-img img{
-        height: 40%;
-        margin-left: 0;
-     }
+      .play-instantly-image {
+        width: 100%;
+      }
 
-     .ten-years-badge{
-        position: static;
-     }
-
-
-     .footer h6{
+      .play {
         text-align: center;
-        padding: 15px 20px;
-        background-color: #FFF4E7;
-        border-radius: 8px;
-        margin: 60px 20px;
-    } */
+        
+      }
 
+      .star{
+        margin-top: 20px;
+      }
+
+
+      .play-instantly-text {
+        width: 89%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 45px;
+      }
+
+
+      .play-instantly-section {
+        margin: 47px auto;
+
+      }
+
+      .games-button-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .strategy-games {
+        margin: 14px 0px;
+    }
+
+    .game-text {
+        
+        font-size: 0.60rem;
+    }
+
+    .play-instantly-section {
+        min-height: 246px;
+
+    }
+
+    .first-nav, .social-icon, .third-nav{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+
+    .third-nav{
+        grid-template-columns: repeat(2,1fr);
+        margin: 20px 50px;
+        padding: 30px 60px;
+    }
+
+    .social-icon a {
+        text-decoration: none;
+        padding: 6px;
+        margin: 30px 56px;
+
+    }
+
+    .footer-section {
+        padding: 50px 21px 20px;
+    }
+
+    .footer-section div {
+        margin: 9px;
+      }
+
+    
+       
+        
+        
+   
     
 
         
     
 }
+
+
+
+
+
+
+
 
 
 
@@ -599,23 +819,61 @@ body{
       }
 
 
-      
+      .online-games-container{
+        grid-template-columns: repeat(2,1fr);
+        /* margin: 40px auto; */
+        
+    }
 
-
-      /* .feature-img img{
-        height: 90%;
-        margin: 0 auto;
-     }
-
-
-     .footer h6{
+    .play-instantly-text {
         text-align: center;
-        padding: 15px 20px;
-        background-color: #FFF4E7;
-        border-radius: 8px;
-        margin: 60px 20px;
-    } */
+        padding-left: 19px;
+        padding-right: 19px;
+      }
 
+      .play-instantly-image {
+        width: 45%;
+      }
+
+      .play {
+        text-align: center;
+      }
+
+      .star{
+        margin-top: 20px;
+      }
+
+
+      .play-instantly-section {
+        margin: 58px auto;
+
+      }
+
+      .games-button-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .play-instantly-section {
+        min-height: 245px;
+        
+      }
+
+      .strategy-games {
+        margin: 20px 67px;
+
+      }
+
+
+      .footer-section {
+        
+        padding: 48px 0 20px;
+      
+      }
+
+
+   
+
+  
      
 
 
